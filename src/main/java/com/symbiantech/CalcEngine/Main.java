@@ -24,6 +24,19 @@ public class Main {
         }
 
         System.out.println("Simple Calculations are complete now");
+
+        double leftDouble = 9.0d;
+        double rightDouble = 4.0d;
+        int leftInt = 9;
+        int rightInt = 4;
+
+        MathEquation equationOverload = new MathEquation('d');
+        equationOverload.execute(leftDouble, rightDouble);
+        System.out.println(equationOverload.getResults());
+
+        equationOverload.execute(leftInt, rightInt);
+        System.out.println(equationOverload.getResults());
+
     }
 
 //    public static MathEquation create(double leftVals, double rightVals, char opCodes) {

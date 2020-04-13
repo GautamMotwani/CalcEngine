@@ -49,8 +49,20 @@ public class MathEquation {
             break;
         default:
             System.out.println("Incorrect opcodes entered");
+        }
     }
-}
 
+    public void execute(double leftVals, double rightVals) {
+        this.leftVals = leftVals;
+        this.rightVals = rightVals;
+        execute();
+    }
+
+    public void execute(int leftVals, int rightVals) {
+        this.leftVals = leftVals;
+        this.rightVals = rightVals;
+        execute();
+        results = (int) results;
+    }
 
 }
