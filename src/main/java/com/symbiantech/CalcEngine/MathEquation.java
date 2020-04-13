@@ -19,6 +19,20 @@ public class MathEquation {
 
     public double getResults() {return results;}
 
+    public MathEquation() {
+
+    }
+
+    public MathEquation(char opCodes) {
+        this.opCodes = opCodes;
+    }
+
+    public MathEquation(char opCodes, double leftVals, double rightVals) {
+        this(opCodes);
+        this.leftVals = leftVals;
+        this.rightVals = rightVals;
+    }
+
     public void execute() {
     switch (opCodes) {
         case 'a':
