@@ -17,7 +17,7 @@ public class Main {
             System.out.println(equation.getResults());
         }
 
-        System.out.println("Simple Calculations are complete");
+        System.out.println("Simple Calculations are complete now");
     }
 
     public static MathEquation create(double leftVals, double rightVals, char opCodes) {
